@@ -1,0 +1,16 @@
+#!/bin/bash
+WORK_DIR='/home/dinex/Dinex/work/'
+cd $WORK_DIR
+
+if [ -f gtags.files ] ; then
+    rm gtags.files
+fi
+
+echo "Inizio creazione gtags.files"
+
+DIR=./Application
+find -P $DIR -type f -and \
+         \( -name '*.cpp' -or -name '*.h' \) -and \
+         -not -name 'CMake*' >> gtags.files
+
+echo "gtags.files creato"
