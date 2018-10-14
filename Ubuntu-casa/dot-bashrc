@@ -132,7 +132,7 @@ if [[ -f "${HOME}/.Xmodmap" ]]; then
 fi
 
 # Python Virtualenvwrapper
-export PROJECT_HOME="$HOME/projects"
+export PROJECT_HOME="$HOME/Projects"
 
 # pipenv configuration
 # export PIPENV_VENV_IN_PROJECT=1
