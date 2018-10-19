@@ -1,8 +1,6 @@
 #!/bin/bash
-WORK_DIR='/home/dinex/Dinex/work/'
-cd $WORK_DIR
-
 if [ -f gtags.files ] ; then
+    echo "Cancello vecchio gtags.files"
     rm gtags.files
 fi
 
