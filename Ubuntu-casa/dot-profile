@@ -20,6 +20,11 @@ fi
 PATH="$HOME/bin:$HOME/.local/bin:$PATH"
 export GTAGSLABEL=pygments
 
+# read ~/.Xmodmap if it exists
+if [[ -f "${HOME}/.Xmodmap" ]]; then
+    xmodmap "${HOME}/.Xmodmap"
+fi
+
 # set PATH per ambiente Dinex
 if [ -d "$HOME/bin.SK2009" ] ; then
     PATH="$PATH:$HOME/bin.SK2009"
@@ -28,3 +33,4 @@ fi
 if [ -d "$HOME/bin.SK2014" ] ; then
     PATH="$PATH:$HOME/bin.SK2014"
 fi
+

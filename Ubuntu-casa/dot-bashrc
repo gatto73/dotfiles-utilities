@@ -126,13 +126,10 @@ alias em="emacsclient -n -a \"\" -c"
 # alias vim="emacsclient -n -a \"\" -c"
 # alias vi="emacsclient -n -a \"\" -c"
 
-# read ~/.Xmodmap if it exists
-if [[ -f "${HOME}/.Xmodmap" ]]; then
-    xmodmap "${HOME}/.Xmodmap"
-fi
-
 # Python Virtualenvwrapper
 export PROJECT_HOME="$HOME/Projects"
 
 # pipenv configuration
 # export PIPENV_VENV_IN_PROJECT=1
+
+export SVN_REPO='http://192.168.56.2/svn/testrepo'
