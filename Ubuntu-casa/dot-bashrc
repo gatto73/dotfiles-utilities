@@ -131,5 +131,3 @@ export PROJECT_HOME="$HOME/Projects"
 
 # pipenv configuration
 # export PIPENV_VENV_IN_PROJECT=1
-
-export SVN_REPO='http://192.168.56.2/svn/testrepo'
