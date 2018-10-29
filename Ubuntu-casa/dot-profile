@@ -16,9 +16,20 @@ if [ -n "$BASH_VERSION" ]; then
     fi
 fi
 
-# set PATH so it includes user's private bin directories
-PATH="$HOME/bin:$HOME/.local/bin:$PATH"
-export GTAGSLABEL=pygments
+# set PATH so it includes user's private bin if it exists
+if [ -d "$HOME/bin" ] ; then
+    PATH="$HOME/bin:$PATH"
+fi
+
+# set PATH so it includes user's private bin if it exists
+if [ -d "$HOME/.local/bin" ] ; then
+    PATH="$HOME/.local/bin:$PATH"
+fi
+
+# read ~/.Xmodmap if it exists
+if [[ -f "${HOME}/.Xmodmap" ]]; then
+    xmodmap "${HOME}/.Xmodmap"
+fi
 
 # set PATH per ambiente Dinex
 if [ -d "$HOME/bin.SK2009" ] ; then
@@ -28,3 +39,6 @@ fi
 if [ -d "$HOME/bin.SK2014" ] ; then
     PATH="$PATH:$HOME/bin.SK2014"
 fi
+
+export GTAGSLABEL=pygments
+

@@ -1,5 +1,6 @@
 #!/bin/bash
 if [ -f gtags.files ] ; then
+    echo "Cancello vecchio gtags.files"
     rm gtags.files
 fi
 

@@ -126,11 +126,6 @@ alias em="emacsclient -n -a \"\" -c"
 # alias vim="emacsclient -n -a \"\" -c"
 # alias vi="emacsclient -n -a \"\" -c"
 
-# read ~/.Xmodmap if it exists
-if [[ -f "${HOME}/.Xmodmap" ]]; then
-    xmodmap "${HOME}/.Xmodmap"
-fi
-
 # Python Virtualenvwrapper
 export PROJECT_HOME="$HOME/Projects"
 

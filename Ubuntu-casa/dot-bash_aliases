@@ -1,6 +1,6 @@
 alias my-enscript='enscript --line-numbers\
                             --highlight\
-                            --font=SourceCodePro-Medium@12\
+                            --font=SourceCodePro@12\
                             --borders\
                             --landscape\
                             --tabsize=4\

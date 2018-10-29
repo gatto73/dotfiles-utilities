@@ -1,0 +1,9 @@
+! Menu key is also used for Control_R
+
+! keycode 105 = Control_R NoSymbol Control_R
+! keycode 135 = Menu NoSymbol Menu
+
+clear control
+keycode 105 = Control_R NoSymbol Control_R
+keycode 135= Control_R NoSymbol Control_R
+add control = Control_L Control_R
