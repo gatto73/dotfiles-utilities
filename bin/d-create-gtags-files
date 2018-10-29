@@ -1,7 +1,4 @@
 #!/bin/bash
-WORK_DIR='/home/dinex/Dinex/work/'
-cd $WORK_DIR
-
 if [ -f gtags.files ] ; then
     rm gtags.files
 fi
