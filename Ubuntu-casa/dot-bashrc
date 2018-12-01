@@ -118,11 +118,10 @@ fi
 
 # Use Emacs as the default editor
 # Replace vim with emacsclient
-# export EDITOR="emacsclient -n -a \"\" -c"
-# export GIT_EDITOR="emacsclient -n -a \"\" -c"
-export EDITOR="emacsclient -c"
-export GIT_EDITOR="emacsclient  -c"
-alias em="emacsclient -n -a \"\" -c"
+export EDITOR="emacsclient -n -a emacs -c"
+export GIT_EDITOR="emacsclient -n -a emacs -c"
+alias em="emacsclient -n -a emacs -c"
+alias emw="emacsclient -n -a emacs -c"
 # alias vim="emacsclient -n -a \"\" -c"
 # alias vi="emacsclient -n -a \"\" -c"
 
