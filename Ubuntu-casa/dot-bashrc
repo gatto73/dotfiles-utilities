@@ -120,6 +120,7 @@ fi
 # Replace vim with emacsclient
 export EDITOR="emacsclient -c -a emacs"
 export GIT_EDITOR="emacsclient -c"
+export SVN_EDITOR="emacsclient -c"
 alias em="emacsclient -n -a emacs"
 alias emw="emacsclient -n -a emacs -c"
 # alias vim="emacsclient -n -a \"\" -c"
